@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">航班信息</string>
+    <string name="back">返回</string>
+    <string name="ok">确认</string>
+    <string name="select">选择</string>
+    <string name="info">查询信息仅供参考，实际信息请与机场确认</string>
+
+    <string name="flight_number">航班信息</string>
+    <string name="planned_departure_time">计划起飞</string>
+    <string name="planned_arrival_time">计划到达</string>
+    <string name="actual_arrival_time">实际到达</string>
+    <string name="actual_departure_time">实际起飞</string>
+    <string name="departure_terminal">出发机场楼</string>
+    <string name="arrival_terminal">到达机场楼</string>
+</resources>

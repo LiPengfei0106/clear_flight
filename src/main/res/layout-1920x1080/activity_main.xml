@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cleartv.flight.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="1500px"
+        android:layout_height="775px"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_head"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/take_off" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/land" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="28px"
+            android:paddingTop="28px">
+
+            <ListView
+                android:id="@+id/start_port"
+                android:layout_width="755px"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_marginRight="18px"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="20px"
+                android:paddingRight="24px"
+                android:scrollbarStyle="outsideOverlay" />
+
+            <ListView
+                android:id="@+id/end_port"
+                android:layout_width="755px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="18px"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="24px"
+                android:paddingRight="20px"
+                android:scrollbarStyle="outsideOverlay"
+                android:verticalScrollbarPosition="left" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:text="@string/info"
+                android:textColor="#fff"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="96px"
+                android:text="1/26"
+                android:textColor="#fff"
+                android:textSize="34px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="51px"
+                android:text="@string/select"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="54px"
+                android:text="@string/ok"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="152px"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_content"
+        android:layout_alignLeft="@id/ll_content"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="60px" />
+
+</RelativeLayout>

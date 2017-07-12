@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cleartv.flight.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="1000px"
+        android:layout_height="516.7px"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66.7px">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/take_off" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@mipmap/land" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="18.3px"
+            android:paddingTop="18.3px">
+
+            <ListView
+                android:id="@+id/start_port"
+                android:layout_width="503.3px"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_marginRight="12px"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="14px"
+                android:paddingRight="16px"
+                android:scrollbarStyle="outsideOverlay" />
+
+            <ListView
+                android:id="@+id/end_port"
+                android:layout_width="503.3px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="12px"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="16px"
+                android:paddingRight="14px"
+                android:scrollbarStyle="outsideOverlay"
+                android:verticalScrollbarPosition="left" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47.3px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="1px"
+                android:layout_weight="1"
+                android:text="@string/info"
+                android:textColor="#fff"
+                android:textSize="22.7px" />
+
+            <TextView
+                android:id="@+id/page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="64px"
+                android:text="1/26"
+                android:textColor="#fff"
+                android:textSize="22.7px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="54px"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="34px"
+                android:text="@string/select"
+                android:textSize="18.7px" />
+
+            <TextView
+                android:layout_width="54px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="36px"
+                android:text="@string/ok"
+                android:textSize="18.7px" />
+
+            <TextView
+                android:layout_width="100.7px"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textSize="18.7px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_content"
+        android:layout_alignLeft="@id/ll_content"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="40px" />
+
+</RelativeLayout>

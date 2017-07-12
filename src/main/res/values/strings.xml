@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Flight</string>
+    <string name="back">Back</string>
+    <string name="ok">OK</string>
+    <string name="select">Select</string>
+    <string name="info">Enquiries are for informational purposes only</string>
+
+    <string name="flight_number">FlightNum</string>
+    <string name="planned_departure_time">DepTime</string>
+    <string name="planned_arrival_time">ArrTime</string>
+    <string name="actual_arrival_time">Aexpected</string>
+    <string name="actual_departure_time">Dexpected</string>
+    <string name="departure_terminal">DepTerminal</string>
+    <string name="arrival_terminal">ArrTerminal</string>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cleartv.flight.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="1000px"
+        android:layout_height="516.7px"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/background_2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66.7px"
+            android:padding="12.7px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textSize="22.7px"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="@string/flight_number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="22.7px"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="@string/planned_departure_time"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="22.7px"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="@string/actual_departure_time"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="22.7px"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="@string/planned_arrival_time"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="22.7px"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="@string/actual_arrival_time"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textSize="22.7px"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="@string/departure_terminal"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textSize="22.7px"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="@string/arrival_terminal"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            android:paddingLeft="12.7px"
+            android:paddingRight="10px"
+            android:layout_marginRight="2.7px">
+
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47.3px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dep_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44.7px"
+                android:layout_marginTop="1px"
+                android:textColor="#fff"
+                android:textSize="22.7px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/arr_port"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="1px"
+                android:textColor="#fff"
+                android:textSize="22.7px"
+                />
+
+            <TextView
+                android:id="@+id/page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="64px"
+                android:text="1/26"
+                android:textColor="#fff"
+                android:textSize="22.7px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="53.3px"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="53.3px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="38px"
+                android:text="@string/select"
+                android:textSize="18.7px" />
+
+            <TextView
+                android:layout_width="101.3px"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textSize="18.7px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_content"
+        android:layout_alignLeft="@id/ll_content"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="40px" />
+
+</RelativeLayout>
