@@ -60,10 +60,41 @@ public class MainActivity extends Activity {
         page = findViewById(R.id.page);
 
         startPorts = new ArrayList<>();
-        for(int i = 0;i<10;i++){
-            startPorts.add(new AirportBean("上海","Shanghai","上海虹桥国际机场"+i,"Shanghai Hongqiao International Airport","SHA","ZSSS"));
-            startPorts.add(new AirportBean("广州","Guangzhou","广州白云国际机场"+i,"Guangzhou Baiyun International Airport","CAN","ZSSS"));
-        }
+        startPorts.add(new AirportBean("上海","Shanghai","上海虹桥国际机场","Shanghai Hongqiao International Airport","SHA","ZSSS"));
+        startPorts.add(new AirportBean("上海","Shanghai","上海浦东国际机场","Shanghai Pudong International Airport","PVG","ZSPD"));
+        startPorts.add(new AirportBean("北京","Beijing","北京首都国际机场","Beijing-Capital International Airport","PEK","ZBAA"));
+        startPorts.add(new AirportBean("广州","Guangzhou","广州白云国际机场","Guangzhou Baiyun International Airport","CAN","ZSSS"));
+        startPorts.add(new AirportBean("深圳","Shenzhen","深圳宝安国际机场","Shenzhen Bao'an International Airport","SZX","ZGSZ"));
+        startPorts.add(new AirportBean("武汉","Wuhan","武汉天河国际机场","Wuhan Tianhe International Airport","WUH","ZHHH"));
+        startPorts.add(new AirportBean("南京","Shanghai","南京禄口国际机场","Shanghai Hongqiao International Airport","NKG","ZSNJ"));
+        startPorts.add(new AirportBean("长沙","Changsha","长沙黄花国际机场","Changsha Huanghua International Airport","CSX","ZGHA"));
+        startPorts.add(new AirportBean("成都","Chengdu","成都双流国际机场","Shanghai Hongqiao International Airport","CTU","ZUUU"));
+        startPorts.add(new AirportBean("重庆","Chongqin","重庆江北国际机场","Chongqing Jiangbei International Airport","CKG","ZUCK"));
+        startPorts.add(new AirportBean("杭州","Hangzhou","杭州萧山国际机场","Hangzhou International Airport","HGH","ZSHC"));
+        startPorts.add(new AirportBean("宁波","Ningbo","宁波栎社国际机场","Ningbo Lishe International Airport","NGB","ZSNB"));
+        startPorts.add(new AirportBean("厦门","Xiamen","厦门高崎国际机场","Xiamen Gaoqi International Airport","XMN","ZSAM"));
+        startPorts.add(new AirportBean("天津","Tianjin","天津滨海国际机场","Tianjin-Binhai International Airport","TSN","ZBTJ"));
+        startPorts.add(new AirportBean("石家庄","ShiJiazhuang","石家庄正定国际机场","ShiJiazhuang Zhengding International Airport","SJW","ZBSJ"));
+        startPorts.add(new AirportBean("郑州","Zhengzhou","郑州新郑国际机场","Zhengzhou Xinzheng International Airport","CGO","ZHCC"));
+        startPorts.add(new AirportBean("济南","Jinan","济南遥墙国际机场","Jinan Yaoqiang International Airport","TNA","ZSJN"));
+        startPorts.add(new AirportBean("合肥","Hefei","合肥新桥国际机场","Hefei Xinqiao International Airport","HFE","ZSOF"));
+        startPorts.add(new AirportBean("南昌","NanChang","南昌昌北国际机场","Nanchang Changbei International Airport","KHN","ZSCN"));
+        startPorts.add(new AirportBean("兰州","Lanzhou","兰州中川国际机场","Lanzhou Zhongchuan International Airport","LHW","ZLLL"));
+        startPorts.add(new AirportBean("西宁","Xining","西宁曹家堡机场","Xining caojiapu Airport","XNN","ZLXN"));
+        startPorts.add(new AirportBean("西安","Xi'an","西安咸阳国际机场","Xi'an Xianyang International Airport","XIY","ZLXY"));
+        startPorts.add(new AirportBean("贵阳","Guiyang","贵阳龙洞堡国际机场","Guiyang Longdongbao International Airport","KWE","ZUGY"));
+        startPorts.add(new AirportBean("南宁","NanNing","南宁吴圩国际机场","Nanning Wuxu International Airpor","NNG","ZGNN"));
+        startPorts.add(new AirportBean("呼和浩特","Huhehaote","呼和浩特白塔国际机场","Hohhot Baita International Airport","HET","ZBHH"));
+        startPorts.add(new AirportBean("沈阳","Shenyang","沈阳桃仙国际机场","Shenyang Taoxian International Airport","SHE","ZYTX"));
+        startPorts.add(new AirportBean("哈尔滨","Harbin","哈尔滨太平国际机场","Harbin Taiping International Airport","HRB","ZYHB"));
+        startPorts.add(new AirportBean("长春","Changchun","长春龙嘉国际机场","Changchun Longjia International Airport","CGQ","ZYCC"));
+        startPorts.add(new AirportBean("太原","Taiyuan","太原武宿国际机场","Taiyuan Wu Su International Airport","TYN","ZBYN"));
+        startPorts.add(new AirportBean("乌鲁木齐","Urumchi","乌鲁木齐地窝堡国际机场","Urumchi Diwopu International Airport","URC","ZWWW"));
+        startPorts.add(new AirportBean("三亚","Sanya","三亚凤凰国际机场","Sanya Phoenix International Airport","SYX","ZJSY"));
+        startPorts.add(new AirportBean("海口","Haikou","海口美兰国际机场","Haikou Meilan International Airport","HAK","ZJHK"));
+        startPorts.add(new AirportBean("香港","Hong Kong","香港国际机场","Hong Kong International Airport","HKG","VHHH"));
+        startPorts.add(new AirportBean("澳门","Macao","澳门国际机场","Macao International Airport","MFM","VMMC"));
+        startPorts.add(new AirportBean("台北","Taibei","台北松山机场","Taipei Songshan Airport","TSA","RCSS"));
 
         adapter = new BaseAdapter() {
             @Override
@@ -119,6 +150,7 @@ public class MainActivity extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 page.setText(i+1+"/"+startPorts.size());
+                view.requestFocus();
             }
 
             @Override
@@ -127,20 +159,26 @@ public class MainActivity extends Activity {
             }
         };
 
+//        start_port.setFocusable(false);
+//        end_port.setFocusable(false);
+        end_port.setOnItemSelectedListener(listener);
+        end_port.setAdapter(adapter2);
+
         start_port.setOnItemSelectedListener(listener);
         start_port.setAdapter(adapter);
 
-        end_port.setOnItemSelectedListener(listener);
-        end_port.setAdapter(adapter2);
+
+
+
         start_port.requestFocus();
         isFoucesStart = true;
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                onKeyLeft();
-            }
-        },20);
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                onKeyLeft();
+//            }
+//        },50);
     }
 
     @Override
@@ -199,8 +237,9 @@ public class MainActivity extends Activity {
     }
 
     private void onKeyLeft(){
-        if(end_port.getSelectedView()!=null)
+        if(end_port.getSelectedView()!=null){
             end_port.getSelectedView().setBackgroundResource(R.mipmap.air_port_selected);
+        }
         isFoucesStart = true;
         start_port.requestFocus();
         adapter.notifyDataSetChanged();
@@ -208,8 +247,9 @@ public class MainActivity extends Activity {
     }
 
     private void onKeyRight(){
-        if(start_port.getSelectedView()!=null)
+        if(start_port.getSelectedView()!=null){
             start_port.getSelectedView().setBackgroundResource(R.mipmap.air_port_selected);
+        }
         isFoucesStart = false;
         end_port.requestFocus();
         adapter2.notifyDataSetChanged();

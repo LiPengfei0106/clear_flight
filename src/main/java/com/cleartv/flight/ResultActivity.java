@@ -43,8 +43,7 @@ public class ResultActivity extends Activity {
     private List<FlightInfoBean> datas;
     private TextView page;
 
-//    private String URL = "http://api.avatardata.cn/FlightDynamic/Airline";
-    private String URL = "http://api.avatardata.cn/FlightDynamic/A";
+    private String URL = "http://api.avatardata.cn/FlightDynamic/Airline";
     private String APPKEY = "c79d876ffab34cf1a1794711d3c00171";
 
     private static Handler mHandler = new Handler();
@@ -115,14 +114,15 @@ public class ResultActivity extends Activity {
                         throw new Exception("data.getError_code()");
                     }
                 }catch (Exception e){
-                    for(int i = 0;i<60;i++)
-                        datas.add(new FlightInfoBean("123"+i,"123","123","123","123","123","123"));
-                    mHandler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            setData();
-                        }
-                    });
+                    Toast.makeText(ResultActivity.this,e.getMessage(),Toast.LENGTH_LONG).show();
+//                    for(int i = 0;i<60;i++)
+//                        datas.add(new FlightInfoBean("123"+i,"123","123","123","123","123","123"));
+//                    mHandler.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            setData();
+//                        }
+//                    });
                 }
             }
         });

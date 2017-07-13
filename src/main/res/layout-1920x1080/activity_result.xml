@@ -113,6 +113,7 @@
                 android:layout_marginLeft="67px"
                 android:layout_marginTop="1px"
                 android:textColor="#fff"
+                android:maxLines="1"
                 android:textSize="34px" />
 
             <ImageView
@@ -129,6 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="1px"
+                android:maxLines="1"
                 android:textColor="#fff"
                 android:textSize="34px" />
 

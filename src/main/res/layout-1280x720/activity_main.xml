@@ -32,7 +32,7 @@
                 android:src="@mipmap/land" />
         </LinearLayout>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -42,31 +42,27 @@
 
             <ListView
                 android:id="@+id/start_port"
-                android:layout_width="503.3px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:layout_margin="0dp"
-                android:layout_marginRight="12px"
                 android:divider="@null"
-                android:listSelector="@android:color/transparent"
                 android:paddingLeft="14px"
-                android:paddingRight="16px"
-                android:scrollbarStyle="outsideOverlay" />
+                android:paddingRight="14px"
+                android:scrollbars="none"/>
 
             <ListView
                 android:id="@+id/end_port"
-                android:layout_width="503.3px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
                 android:layout_margin="0dp"
-                android:layout_marginLeft="12px"
                 android:divider="@null"
-                android:listSelector="@android:color/transparent"
-                android:paddingLeft="16px"
+                android:paddingLeft="14px"
                 android:paddingRight="14px"
-                android:scrollbarStyle="outsideOverlay"
-                android:verticalScrollbarPosition="left" />
+                android:scrollbars="none"/>
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

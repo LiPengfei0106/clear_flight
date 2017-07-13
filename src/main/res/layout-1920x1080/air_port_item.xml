@@ -3,8 +3,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:focusable="true"
-    android:background="@drawable/air_port_background"
     >
 
 
@@ -15,6 +13,7 @@
         android:gravity="center"
         android:duplicateParentState="true"
         android:textColor="@color/air_port_text"
+        android:background="@drawable/air_port_background"
         android:textSize="34px" />
 
 </FrameLayout>
